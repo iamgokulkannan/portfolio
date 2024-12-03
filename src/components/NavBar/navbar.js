@@ -17,7 +17,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src={logo} alt="Logo" className="logo" />
+      <img
+        src={logo}
+        alt="Logo"
+        className="logo"
+        onClick={() => (window.location.href = '#')}
+      />
 
       {/* Desktop Menu */}
       <div className="desktopMenu">
