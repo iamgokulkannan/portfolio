@@ -59,6 +59,13 @@ const Navbar = () => {
         >
           Projects
         </Link>
+        <a
+          href="../../../Resume.pdf"
+          download="Resume.pdf"
+          className="desktopMenuListItem"
+        >
+          Resume
+        </a>
       </div>
 
       {/* Contact Button */}
@@ -139,6 +146,14 @@ const Navbar = () => {
           >
             Contact Me
           </Link>
+          <a
+            href="../../../Resume.pdf"
+            download="Resume.pdf"
+            className="mobileMenuItem"
+            onClick={closeMobileMenu}
+          >
+            Resume
+          </a>
         </div>
       </div>
     </nav>

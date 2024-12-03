@@ -37,6 +37,7 @@
 }
 
 .desktopMenuListItem {
+  color: white;
   margin: 1rem;
   cursor: pointer;
 }
@@ -197,4 +198,11 @@
   color: #ffde4e;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #ffde4e;
+}
+
+.resume {
+  margin: none;
+  border: none;
+  color: white;
+  font-weight: 400;
 }
