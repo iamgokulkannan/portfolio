@@ -1,0 +1,200 @@
+.navbar {
+  background: rgb(30, 30, 30);
+  height: 5rem;
+  width: 100vw;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.desktopMenu {
+  position: absolute; /* Absolute positioning to center the menu */
+  left: 50%; /* Position it in the middle */
+  transform: translateX(
+    -50%
+  ); /* Offset by 50% of its width to perfectly center */
+  display: flex;
+  justify-content: center; /* Center the menu items horizontally */
+  align-items: center;
+  gap: 2rem; /* Spacing between menu items */
+}
+
+.logo {
+  flex-shrink: 0; /* Prevents logo from shrinking */
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+  color: #ffde4e;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ffde4e;
+}
+
+.desktopMenuButton,
+.contactMe {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+}
+
+.contactMe {
+  margin: 1.5rem 0;
+}
+
+.desktopMenuButton:hover,
+.contactMe:hover {
+  cursor: pointer;
+  background: #ffde4e;
+}
+
+.desktopMenuIcon {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+/* Mobile Menu Full Screen */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Set background color to black */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%); /* Hidden initially */
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999; /* Ensure it stays on top */
+  opacity: 0;
+}
+
+.mobileMenu.open {
+  transform: translateY(0); /* Slide down when open */
+  opacity: 1;
+}
+
+.mobileMenuContent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMenuItem {
+  font-size: 2rem;
+  color: white; /* Text color white */
+  margin: 1rem 0;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.mobileMenuItem:hover {
+  color: #ffde4e; /* Highlight on hover (yellow) */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* 'X' Close Icon */
+.closeIcon {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffde4e; /* Yellow color */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 10000; /* Ensures the 'X' is above all other content */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.5rem;
+  cursor: pointer;
+  position: absolute; /* Positioned at the top-right */
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 10001; /* Ensure it's above other content */
+}
+
+.line {
+  background-color: #ffde4e; /* Yellow color for hamburger lines */
+  height: 0.25rem;
+  width: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger line transitions when open */
+.line1 {
+  transform-origin: top left;
+}
+
+.line2 {
+  opacity: 1; /* By default, the middle line is visible */
+}
+
+.line3 {
+  transform-origin: bottom left;
+}
+
+/* When mobile menu is open, animate the lines into 'X' */
+.rotate45 {
+  transform: rotateZ(60deg) translateY(-0.25rem);
+  top: calc(50% - 0.125rem); /* Center the line vertically */
+}
+
+.rotate135 {
+  transform: rotateZ(-60deg) translateY(0.25rem);
+  top: calc(50% - 0.25rem);
+}
+
+.opacity0 {
+  opacity: 0; /* Set a faint opacity for the middle line */
+}
+
+@media screen and (max-width: 840px) {
+  .desktopMenu,
+  .desktopMenuButton {
+    display: none; /* Hide desktop menu */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+}
+
+.desktopMenu .active {
+  color: #ffde4e;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #ffde4e;
+}

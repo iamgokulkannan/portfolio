@@ -1,0 +1,72 @@
+#works {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.worksTitle {
+  color: #ffde4e;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.worksDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 60rem;
+  margin-bottom: 2rem;
+}
+
+.worksImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 65rem;
+}
+
+.worksImg {
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+}
+
+.seeMore {
+  padding: 0.5rem 2.5rem;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 2rem;
+  margin: 2.5rem 0;
+}
+
+.seeMore:hover {
+  background-color: #ffde4e;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 585px) {
+  .worksImg {
+    height: 50vw;
+  }
+}
+
+.worksImg {
+  /* Normal link styles */
+  transition: transform 0.08s ease-in-out;
+  border-radius: 1rem;
+}
+
+.worksImg:hover {
+  /* Subtle magnification effect */
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
