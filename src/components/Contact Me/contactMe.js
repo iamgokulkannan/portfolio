@@ -13,7 +13,7 @@ const ContactMe = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_yahcciq', 'template_hdf1h9x', form.current, {
+      .sendForm('service_dsrbcop', 'template_hdf1h9x', form.current, {
         publicKey: 'A4ZbXweNW9ErzqTuT',
       })
       .then(
