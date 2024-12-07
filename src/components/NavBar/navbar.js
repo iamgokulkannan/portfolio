@@ -3,6 +3,7 @@ import './navbar.css';
 import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contact.png';
 import { Link } from 'react-scroll';
+import resume from './Resume.pdf';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -59,11 +60,7 @@ const Navbar = () => {
         >
           Projects
         </Link>
-        <a
-          href="../../../Resume.pdf"
-          download="Resume.pdf"
-          className="desktopMenuListItem"
-        >
+        <a href={resume} download="Resume.pdf" className="desktopMenuListItem">
           Resume
         </a>
       </div>
@@ -147,8 +144,8 @@ const Navbar = () => {
             Contact Me
           </Link>
           <a
-            href="../../../Resume.pdf"
-            download="Resume.pdf"
+            href={resume}
+            download="Resume"
             className="mobileMenuItem"
             onClick={closeMobileMenu}
           >
