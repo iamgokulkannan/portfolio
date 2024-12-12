@@ -81,3 +81,8 @@
   /* Subtle magnification effect */
   transform: scale(1.2); /* Adjust the scale factor as needed */
 }
+
+.contactForm:hover {
+  cursor: pointer;
+  color: rgb(90, 90, 90);
+}

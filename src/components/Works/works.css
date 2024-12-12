@@ -69,4 +69,5 @@
 .worksImg:hover {
   /* Subtle magnification effect */
   transform: scale(1.1); /* Adjust the scale factor as needed */
+  cursor: pointer;
 }
