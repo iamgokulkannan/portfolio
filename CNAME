@@ -1,7 +1,3 @@
-Type: A
-Name: @
-Values:
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
+Type: CNAME
+Name: www
+Value: iamgokulkannan.github.io
