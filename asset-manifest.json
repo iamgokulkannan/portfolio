@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89d0a3c9.css",
+    "main.js": "/static/js/main.37dc40fc.js",
+    "static/media/gokul.png": "/static/media/gokul.02432a3a6263bf56d046.png",
+    "static/media/portfolio-3.png": "/static/media/portfolio-3.d7cc9bb958bc0e9dbdea.png",
+    "static/media/portfolio-4.png": "/static/media/portfolio-4.7866f66c27555029b2f1.png",
+    "static/media/portfolio-5.png": "/static/media/portfolio-5.7933731cf33ff11d5127.png",
+    "static/media/portfolio-1.png": "/static/media/portfolio-1.b534939b61622e35d58c.png",
+    "static/media/Resume.pdf": "/static/media/Resume.6190ec92cb277b3e3a1e.pdf",
+    "static/media/portfolio-6.png": "/static/media/portfolio-6.2207e5b17f595ad93cb3.png",
+    "static/media/logo.png": "/static/media/logo.05534a7fe2e6723484ab.png",
+    "static/media/portfolio-2.png": "/static/media/portfolio-2.0ef25605d7ce039edf6c.png",
+    "static/media/instagram.png": "/static/media/instagram.3265f4c9337175e4f80d.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.ea854ab10413f43fcc0d.png",
+    "static/media/security-testing.png": "/static/media/security-testing.8c59ec579bfe96fe2d17.png",
+    "static/media/linkedin.png": "/static/media/linkedin.17e919bb623c20be8b80.png",
+    "static/media/facebook.png": "/static/media/facebook.49e67d43221b6bb1aa86.png",
+    "static/media/ui-design.png": "/static/media/ui-design.c4acd455fc2040eddcc8.png",
+    "index.html": "/index.html",
+    "main.89d0a3c9.css.map": "/static/css/main.89d0a3c9.css.map",
+    "main.37dc40fc.js.map": "/static/js/main.37dc40fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89d0a3c9.css",
+    "static/js/main.37dc40fc.js"
+  ]
+}
